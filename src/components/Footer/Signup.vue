@@ -78,6 +78,11 @@
         .then(user => {
           console.log(user.email)
           alert('Create account:', user.email)
+          if(this.$route.query.redirect) {
+            this.$router.push(this.$route.query.redirect)
+          } else {
+            this.$router.push('/')
+          }
         })
         .catch(error => {
           alert(error.message)

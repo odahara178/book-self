@@ -1,29 +1,7 @@
 # bookshelf
 
-## Project setup
+## 注意事項
 ```
-npm install
+github pagesに上げているので、更新ボタンを押すと404になります。
+現在その他に上げる等改修を検討しています。
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
