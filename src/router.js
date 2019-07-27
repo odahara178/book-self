@@ -12,29 +12,29 @@ const router = new Router({
   mode: 'history',
   routes: [
     {
-      path: 'book-self/',
+      path: '/book-self',
       name: 'home',
       component: Home
     },
     {
-      path: 'book-self/login',
+      path: '/book-self/login',
       name: 'login',
       component: Login
     },
     {
-      path: 'book-self/list',
+      path: '/book-self/list',
       name: 'list',
       component: List,
       meta: { requiresAuth: true }
     },
     {
-      path: 'book-self/signup',
+      path: '/book-self/signup',
       name: 'signup',
       component: Signup
     },
     {
       path: '*',
-      redirect: 'book-self/'
+      redirect: '/book-self'
     },
   ]
 })
