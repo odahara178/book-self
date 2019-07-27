@@ -31,7 +31,11 @@ const router = new Router({
       path: '/signup',
       name: 'signup',
       component: Signup
-    }
+    },
+    {
+      path: '*',
+      redirect: '/'
+    },
   ]
 })
 
