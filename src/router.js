@@ -9,32 +9,32 @@ import firebase from 'firebase'
 Vue.use(Router)
 
 const router = new Router({
-  mode: '',
+  mode: 'history',
   routes: [
     {
-      path: '/book-self',
+      path: '/',
       name: 'home',
       component: Home
     },
     {
-      path: '/book-self/login',
+      path: '/login',
       name: 'login',
       component: Login
     },
     {
-      path: '/book-self/list',
+      path: '/list',
       name: 'list',
       component: List,
       meta: { requiresAuth: true }
     },
     {
-      path: '/book-self/signup',
+      path: '/signup',
       name: 'signup',
       component: Signup
     },
     {
       path: '*',
-      redirect: '/book-self'
+      redirect: '/'
     },
   ]
 })
